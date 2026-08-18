@@ -1,0 +1,355 @@
+/* LOGIN PAGE */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f8f6ef;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+
+/* MAIN LAYOUT */
+
+.login-content {
+  width: 100%;
+  max-width: 1250px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px;
+}
+
+
+/* MASCOTS */
+
+.login-mascot {
+  width: 220px;
+  flex-shrink: 0;
+
+  animation: mascotFloat 3s ease-in-out infinite;
+}
+
+.login-mascot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* LOGIN CARD - SMALLER */
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  padding: 38px 42px;
+
+  border-radius: 26px;
+
+  box-shadow:
+    0 18px 45px rgba(35, 67, 140, 0.22),
+    0 0 35px rgba(66, 103, 178, 0.18);
+
+  animation: cardAppear 0.6s ease forwards;
+}
+
+
+/* HEADING */
+
+.login-heading {
+  margin-bottom: 25px;
+}
+
+.login-heading h1 {
+  margin: 0 0 8px;
+
+  color: #263657;
+
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.login-heading h1 span {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
+.login-heading p {
+  margin: 0;
+
+  color: #687386;
+  font-size: 17px;
+}
+
+
+/* FORM */
+
+.login-form .input-group {
+  margin-bottom: 18px;
+}
+
+.login-form label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #34415c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.login-form input {
+  width: 100%;
+  height: 52px;
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cfd6e3;
+  border-radius: 13px;
+
+  outline: none;
+
+  background: #f9fafc;
+  color: #263657;
+
+  font-size: 15px;
+}
+
+.login-form input:focus {
+  border-color: #4267b2;
+
+  box-shadow: 0 0 0 3px rgba(66, 103, 178, 0.12);
+}
+
+
+/* PASSWORD */
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  padding-right: 50px;
+}
+
+.password-toggle {
+  position: absolute;
+
+  right: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+
+/* OPTIONS */
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex !important;
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 0 !important;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.remember-me input {
+  width: 16px !important;
+  height: 16px !important;
+
+  padding: 0 !important;
+}
+
+.login-options a {
+  color: #4267b2;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-btn {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 13px;
+
+  background: #263f78;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #19315f;
+}
+
+
+/* DIVIDER */
+
+.login-divider {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 22px 0;
+}
+
+.login-divider span {
+  flex: 1;
+  height: 1px;
+
+  background: #d8deea;
+}
+
+.login-divider p {
+  margin: 0;
+
+  color: #687386;
+  font-size: 14px;
+}
+
+
+/* GOOGLE */
+
+.google-btn {
+  width: 100%;
+  height: 52px;
+
+  border: 1px solid #cfd6e3;
+  border-radius: 13px;
+
+  background: white;
+  color: #34415c;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* SIGNUP */
+
+.signup-text {
+  text-align: center;
+
+  margin: 18px 0 0;
+
+  color: #526071;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #4267b2;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes mascotFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .login-mascot {
+    width: 150px;
+  }
+
+  .login-content {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-mascot {
+    display: none;
+  }
+
+  .login-card {
+    max-width: 430px;
+    padding: 35px 25px;
+  }
+
+  .login-heading h1 {
+    font-size: 30px;
+  }
+}
